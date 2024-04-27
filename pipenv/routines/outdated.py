@@ -79,9 +79,9 @@ def do_outdated(project, pypi_mirror=None, pre=False, clear=False):
                 else:
                     pipfile_version_text = " (Unpinned in Pipfile)"
                 click.secho(
-                    f"Skipped Update of Package {package!s}:"
-                    f" {old_version!s} installed,{required!s}{pipfile_version_text!s}, "
-                    f"{new_version!s} available.",
+                    f"Skipped Update of Package {package}: "
+                    f"{old_version} installed,{required}{pipfile_version_text}, "
+                    f"{new_version} available.",
                     fg="yellow",
                     err=True,
                 )
